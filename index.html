@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8"/>
+	<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+	<title>Border Radius Preview</title>
+</head>
+<body>
+<div id="app">
+	<div class="viewer_wrapper">
+		<div class="image"></div>
+		<input type="range" min="0" max="100" class="top_left" value="0">
+		<input type="range" min="0" max="100" class="top_right" orient="vertical" value="0">
+		<input type="range" min="0" max="100" class="bottom_right" value="0">
+		<input type="range" min="0" max="100" class="bottom_left" orient="vertical" value="0">
+		<div class="text">
+			<input type="text" value="0% 0% 0% 0%" id="radius_output" readonly>
+			<button id="copy">Copy</button>
+		</div>
+	</div>
+</div>
+<script type="module" src="/main.js"></script>
+</body>
+</html>
